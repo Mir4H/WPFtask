@@ -1,4 +1,4 @@
-# WPFtask
+# WPF exercise
 Exploring WPF and C# coding. 
 This is a WPF application exercise with different functionalities in one: 
 - Home: Possibility to add notes
@@ -9,4 +9,4 @@ This is a WPF application exercise with different functionalities in one:
 - News: Reading from web
 - Finnish/English: Changing languages
 
-![image](https://user-images.githubusercontent.com/77398611/161422398-adfd700b-03a4-4fab-bccc-42ce8326248a.png)
+![image](https://user-images.githubusercontent.com/77398611/161422527-15fc13c2-b2e1-4d65-844c-339472c4f89a.png)
