@@ -1,0 +1,47 @@
+﻿<Window x:Class="WPFharjoituksia.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFharjoituksia"
+        xmlns:p="clr-namespace:WPFharjoituksia.Properties"
+        mc:Ignorable="d"
+        Title="Edit" Height="250" Width="350"
+        ResizeMode="CanMinimize"
+        Background="Transparent">
+    <Border Background="#F5C6BC">
+        <Grid>
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textSample" Grid.Column="0" Grid.Row="0" Text="{x:Static p:Resource.TextSample}" Grid.ColumnSpan="2" FontFamily="{Binding ElementName=ComboFonts, Path=SelectedItem}" FontSize="{Binding ElementName=sliderFontSize, Path=Value}"/>
+        <ComboBox x:Name="ComboFonts" Foreground="#FFC18A7F" Grid.Column="0" Grid.Row="1" SelectedIndex="0" FontSize="16">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock FontFamily="{Binding .}" Text="{Binding Source}" ToolTip="{Binding Source}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+                <ComboBox.ItemsSource>
+                    <CompositeCollection>
+                        <ListBoxItem Content="{x:Static p:Resource.SelectFont}"/>
+                        <CollectionContainer Collection="{Binding Source={x:Static Fonts.SystemFontFamilies}}"/>
+                    </CompositeCollection>
+                </ComboBox.ItemsSource>
+            </ComboBox>
+        <Slider Name="sliderFontSize" Margin="3" Grid.Column="1" Grid.Row="1"
+        Minimum="8" Maximum="72" Value="24"
+        AutoToolTipPlacement="BottomRight"
+        IsSnapToTickEnabled="True"
+        TickFrequency="2" TickPlacement="TopLeft"/>
+
+        <Button x:Name="Apply" Grid.Column="0" Grid.Row="2" Style="{StaticResource Buttons}" Content="{x:Static p:Resource.Apply}" Click="Apply_Click"/>
+            <Button x:Name="Cancel" Grid.Column="1" Grid.Row="2" Style="{StaticResource Buttons}" Content="{x:Static p:Resource.Cancel}" IsCancel="True"/>
+        </Grid>
+    </Border>
+</Window>

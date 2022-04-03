@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="WPFharjoituksia.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFharjoituksia.MVVM.View"
+             xmlns:p="clr-namespace:WPFharjoituksia.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="650">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{x:Static p:Resource.Notes}"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+            <Button x:Name="lisaa" Margin="370, 0, 70, 0" Height="25" Style="{StaticResource Buttons}" Foreground="White" Content="{x:Static p:Resource.AddNote}" Width="100" Click="Button_Click" />
+        </StackPanel>
+        <Grid Margin="0, 0, 0, 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="lappu1" Width="200"
+                    Height="200" Grid.Column="0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti1" Background="Transparent" Grid.Column="1" AcceptsReturn="True" KeyUp="muisti1_KeyUp" Loaded="muisti1_Loaded"  />
+            </Border>
+            <Button x:Name="poista1" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista1_Click"  />
+
+            <Border x:Name="lappu2" Width="200"
+                    Height="200" Grid.Column="1">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="coral" Offset="0.0"/>
+                        <GradientStop Color="#FFD6B221" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti2" Background="Transparent" Grid.Column="1" AcceptsReturn="True" KeyUp="muisti2_KeyUp" Loaded="muisti2_Loaded"  />
+            </Border>
+            <Button x:Name="poista2" Grid.Column="1" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista2_Click"  />
+
+            <Border x:Name="lappu3" Width="200"
+                    Height="200" Grid.Column="2">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" Grid.Column="2" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti3" Background="Transparent" AcceptsReturn="True" KeyUp="muisti3_KeyUp" Loaded="muisti3_Loaded"  />
+            </Border>
+            <Button x:Name="poista3" Grid.Column="2" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista3_Click"  />
+        </Grid>
+        <Grid Margin="0, 0, 0, 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="lappu4" Width="200"
+                    Height="200" Grid.Column="0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="coral" Offset="0.0"/>
+                        <GradientStop Color="#FFD6B221" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti4" Background="Transparent" Grid.Column="1" AcceptsReturn="True" KeyUp="muisti4_KeyUp" Loaded="muisti4_Loaded"  />
+            </Border>
+            <Button x:Name="poista4" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista4_Click"  />
+
+            <Border x:Name="lappu5" Width="200"
+                    Height="200" Grid.Column="1">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti5" Background="Transparent" Grid.Column="1" AcceptsReturn="True" KeyUp="muisti5_KeyUp" Loaded="muisti5_Loaded"  />
+            </Border>
+            <Button x:Name="poista5" Grid.Column="1" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista5_Click"  />
+
+            <Border x:Name="lappu6" Width="200"
+                    Height="200" Grid.Column="2">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="coral" Offset="0.0"/>
+                        <GradientStop Color="#FFD6B221" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <TextBox Padding="20" Grid.Column="2" FontSize="16" MaxLength="123" TextWrapping="Wrap" Foreground="White" x:Name="muisti6" Background="Transparent" AcceptsReturn="True" KeyUp="muisti6_KeyUp" Loaded="muisti6_Loaded"  />
+            </Border>
+            <Button x:Name="poista6" Grid.Column="2" Margin="183,6,14,179" Height="20" Style="{StaticResource Buttons}" Foreground="White" Content="X" Width="20" Click="poista6_Click"  />
+        </Grid>
+    </StackPanel>
+</UserControl>
+

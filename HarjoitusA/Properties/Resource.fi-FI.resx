@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddNote" xml:space="preserve">
+    <value>Lisää Lappu</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Hyväksy</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Browser" xml:space="preserve">
+    <value>Uutiset</value>
+  </data>
+  <data name="Calculator" xml:space="preserve">
+    <value>Laskin</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="Colors" xml:space="preserve">
+    <value>Värit</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>_Kopioi</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Tiedosto</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>Tekstitiedostot (.txt)|*.txt|Kaikki tiedostot (*.*)|*.*</value>
+  </data>
+  <data name="DocumentsS" xml:space="preserve">
+    <value>Tekstitiedostot (.txt)|*.txt</value>
+  </data>
+  <data name="Draw" xml:space="preserve">
+    <value>Piirto</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>_Muokkaa</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Englanti</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>_Sulje</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>_Tiedosto</value>
+  </data>
+  <data name="Finnish" xml:space="preserve">
+    <value>Suomi</value>
+  </data>
+  <data name="firstnumb" xml:space="preserve">
+    <value>Kirjoita ensin numero</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>_Fontti</value>
+  </data>
+  <data name="Format" xml:space="preserve">
+    <value>M_uotoile</value>
+  </data>
+  <data name="GameOver" xml:space="preserve">
+    <value>Peli Ohi!
+Tuloksesi:</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="High" xml:space="preserve">
+    <value>Paras tulos ikinä:
+</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Koti</value>
+  </data>
+  <data name="instruction" xml:space="preserve">
+    <value>Mato liikkuu nuolinäppäimistä ja alla olevista painikkeista</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Kieli</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Uusi</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Muistio</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Muistilappuja</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>_Avaa...</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>_Liitä</value>
+  </data>
+  <data name="PngFiles" xml:space="preserve">
+    <value>Png-kuvat (.png)|*.png</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Tu_losta...</value>
+  </data>
+  <data name="Printing" xml:space="preserve">
+    <value>Tekstieditori tulostus</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Tall_enna...</value>
+  </data>
+  <data name="SelectFont" xml:space="preserve">
+    <value>Valitse fontti...</value>
+  </data>
+  <data name="Sizes" xml:space="preserve">
+    <value>Koot</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Snake" xml:space="preserve">
+    <value>Matopeli</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>https://www.yle.fi</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>Aloita Peli</value>
+  </data>
+  <data name="Swedish" xml:space="preserve">
+    <value>Ruotsi</value>
+  </data>
+  <data name="TextSample" xml:space="preserve">
+    <value>Esimerkki</value>
+  </data>
+  <data name="TitleEdit" xml:space="preserve">
+    <value>Muokkaus</value>
+  </data>
+  <data name="TitleMain" xml:space="preserve">
+    <value>TekstiEditori</value>
+  </data>
+  <data name="zero" xml:space="preserve">
+    <value>Nollalla ei voi jakaa</value>
+  </data>
+</root>

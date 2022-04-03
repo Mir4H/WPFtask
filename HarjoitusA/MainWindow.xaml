@@ -1,0 +1,115 @@
+﻿<Window x:Class="WPFharjoituksia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFharjoituksia"
+        xmlns:viewModel="clr-namespace:WPFharjoituksia.MVVM.ViewModel"
+        xmlns:p="clr-namespace:WPFharjoituksia.Properties"
+        mc:Ignorable="d"
+        Height="600" 
+        Width="920"
+        ResizeMode="CanMinimize">
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+
+        <Border Background="#F5C6BC">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1.5*"/>
+             </Grid.RowDefinitions>
+
+            <TextBlock Text="WPF"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="20,0,0,0"
+                Foreground="White"
+                FontSize="40"
+                Grid.Column="0"
+                Grid.Row="0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="{x:Static p:Resource.Home}"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtons}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"
+                             FocusVisualStyle="{x:Null}"/>
+                <RadioButton Content="{x:Static p:Resource.Calculator}"
+                            Height="50"
+                            Foreground="White"
+                            FontSize="14"
+                            Style="{StaticResource MenuButtons}"
+                            Command="{Binding DiscoveryViewCommand}"
+                             FocusVisualStyle="{x:Null}"/>
+                <RadioButton Content="{x:Static p:Resource.Snake}"
+                            Height="50"
+                            Foreground="White"
+                            FontSize="14"
+                            Style="{StaticResource MenuButtons}"
+                            Command="{Binding MatopeliViewCommand}"
+                             FocusVisualStyle="{x:Null}"/>
+                <RadioButton Content="{x:Static p:Resource.Note}"
+                            Height="50"
+                            Foreground="White"
+                            FontSize="14"
+                            Style="{StaticResource MenuButtons}"
+                            Command="{Binding NoteViewCommand}"
+                             FocusVisualStyle="{x:Null}"/>
+                <RadioButton Content="{x:Static p:Resource.Draw}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtons}"
+                        Command="{Binding DrawViewCommand}"
+                            FocusVisualStyle="{x:Null}"/>
+                <RadioButton Content="{x:Static p:Resource.Browser}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtons}"
+                        Command="{Binding BrowseViewCommand}"
+                            FocusVisualStyle="{x:Null}"/>
+
+                </StackPanel>
+                <StackPanel Grid.Row="2">
+                    <RadioButton Content="{x:Static p:Resource.English}"
+                             Name="eng"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtons}"
+                             Click="eng_Click"
+                             FocusVisualStyle="{x:Null}"/>
+                    <RadioButton Content="{x:Static p:Resource.Finnish}"
+                             Name="fin"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtons}"
+                             Click="fin_Click"
+                                 FocusVisualStyle="{x:Null}"/>
+                </StackPanel>
+            <ContentControl Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Grid.RowSpan="3"
+                            Margin="10"
+                            Content="{Binding CurrentView}"
+                            FocusVisualStyle="{x:Null}"/>
+        </Grid>
+    </Border>
+  </Grid>
+</Window>
